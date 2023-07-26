@@ -192,16 +192,18 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
 
             ?>
             <a href="test.php" type="submit" class="btn btn-danger">Random </a>
+            <div id="text" ></div>
             <br>
         </center>
-        <form name="form1" class="container" action="check.php?id=<?php echo $id_V[0] ?>" method="POST">
+        <form id="form_th" name="form1" class="container" action="javascript:();" enctype="multipart/form-data">
             <div style="width: 700px; " class="container">
                 <br>
-                <input type="text" name="vla_en" class="form-control ">
-                <input type="text" name="mea_en" class="form-control " value="0" style="display: none;">
+                <input type="text" name="vla_en" id="vla_en_f" class="form-control ">
+                <input type="text" name="mea_en" id="mea_en_f" class="form-control " value="0" style="display: none;">
+                <input type="text" name="id"  id="id_f" class="form-control " value="<?php echo $id_V[0] ?>" style="display: none;">
 
 
-                <button type="submit" class="btn btn-primary">Send </button>
+                <button type="submit" class="btn btn-primary" >Send </button>
 
         </form>
 
@@ -239,18 +241,20 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
                     }
                 }
             }
-
+           
             ?>
             <a href="test.php" type="submit" class="btn btn-danger">Random </a>
+            <div id="text_v" ></div>
             <br>
         </center>
-        <form name="form1" class="container" action="check.php?id=<?php echo $id_V2[0] ?>" method="POST">
+        <form id="from_eng" name="from_eng" class="container" action="javascript:();" enctype="multipart/form-data">
             <div style="width: 700px; " class="container">
                 <br>
-                <input type="text" name="mea_en" class="form-control ">
-                <input type="text" name="vla_en" class="form-control " value="0" style="display: none;">
+                <input type="text" name="mea_en" id="mea_en" class="form-control ">
+                <input type="text" name="vla_en" id="vla_en" class="form-control " value="0" style="display: none;">
+                <input type="text" name="id" id="id" class="form-control " value="<?php echo $id_V2[0] ?>" style="display: none;">
                 <br>
-                <button type="submit" class="btn btn-primary">Send </button>
+                <button type="submit" class="btn btn-primary" id="submit_eng">Send </button>
 
         </form>
 
@@ -319,5 +323,6 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
 
 
 <script src="getdata.js" ></script>
+<script src="check.js" ></script>
 
 </html>

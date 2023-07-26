@@ -1,16 +1,13 @@
 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
 <?php
 
-
+header('Content-Type: application/json');
 
 error_reporting(E_ALL ^ E_NOTICE);
 include "db.php";
 
 $mea_en = $_POST['mea_en'];
-$id = $_GET['id'];
+$id = $_POST['id'];
 $time = date("Y-m-d H:i:s");
 $vla_en = $_POST['vla_en'];
 $query = " select * from vocabulary_en  where id  = " . $id;
@@ -24,33 +21,27 @@ while ($row = mysqli_fetch_array($result)) {
 
             // Execute query
             mysqli_query($conn, $sql);
-            echo ".";
-            echo "<script>";
-            echo "Swal.fire({
-			icon: 'success',
-			title: 'correct',
-			showConfirmButton: false,
-			timer: 2000
-			}).then((result) => {
-				if (result.isDismissed) {
-					window.location.href ='test.php';
-				}
-			  })";
-            echo "</script>";
+
+			$response = [
+    
+				'status' => true,
+				
+			  ]; 
+			 
+			  $response = json_encode( $response);
+			 echo $response ;
+            
         }else if ($mea_en !==  $row['meaning']){
-            echo ".";
-            echo "<script>";
-            echo "Swal.fire({
-			icon: 'warning',
-			title: 'mistake',
-			showConfirmButton: false,
-			timer: 2000
-			}).then((result) => {
-				if (result.isDismissed) {
-					window.location.href ='test.php';
-				}
-			  })";
-            echo "</script>";
+
+			$response = [
+    
+				'status' => 'false',
+				'valu' =>$row['vla']
+			  ]; 
+			 
+			  $response = json_encode( $response);
+			 echo $response ;
+          
         }
     }
 
@@ -62,33 +53,23 @@ while ($row = mysqli_fetch_array($result)) {
             // Execute query
             mysqli_query($conn, $sql);
             mysqli_query($conn, $sql);
-            echo ".";
-            echo "<script>";
-            echo "Swal.fire({
-			icon: 'success',
-			title: 'correct',
-			showConfirmButton: false,
-			timer: 2000
-			}).then((result) => {
-				if (result.isDismissed) {
-					window.location.href ='test.php';
-				}
-			  })";
-            echo "</script>";
+			$response = [
+    
+				'status' => true,
+				
+			  ]; 
+			 
+			  $response = json_encode( $response);
+			 echo $response ;
         }else if ($vla_en  !==  $row['meaning']){
-            echo ".";
-            echo "<script>";
-            echo "Swal.fire({
-			icon: 'warning',
-			title: 'mistake',
-			showConfirmButton: false,
-			timer: 2000
-			}).then((result) => {
-				if (result.isDismissed) {
-					window.location.href ='test.php';
-				}
-			  })";
-            echo "</script>";
+			$response = [
+    
+				'status' => 'false',
+				'valu' =>$row['meaning']
+			  ]; 
+			 
+			  $response = json_encode( $response);
+			 echo $response ;
         }
     }
 }

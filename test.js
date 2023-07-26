@@ -100,8 +100,9 @@ function autocomplete(inp, arr) {
  }
 
 let array = [];
+var base_url = window.location.origin;
    $.ajax({
-       url: 'http://localhost/test/getdata.php',
+       url: base_url+'/test/getdata.php',
        success: function (resp) {
          console.log(resp.data_json);
        for(i = 0 ; i < resp.data_json.length ; i ++ ){
