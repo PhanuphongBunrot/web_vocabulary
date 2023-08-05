@@ -17,14 +17,21 @@
 <body>
 <div class="container">
 <div class="   fs-2 shadow p-3 mb-5 bg-body rounded">
+
     <?php 
     include "db.php";
+    $count_data_do_en = " SELECT COUNT(vla) FROM vocabulary_en where status_w is null  ";
+$count_data_do_en_t = mysqli_query($conn, $count_data_do_en);
+$count_data_do_en_t = mysqli_fetch_array($count_data_do_en_t);
      $queryV2 = " select vla from vocabulary_en  where status_w is null ";
 $resultV2 = mysqli_query($conn, $queryV2);
 while ($row = mysqli_fetch_array($resultV2)) { ?>
 
  <center><h3> <?php  echo $row['vla']."<hr>"?></h3>  </center>
 <?php }
+
+
+echo $count_data_do_en_t[0]
 ?>
 
 <a href="test.php" class="btn btn-danger">Back</a>
