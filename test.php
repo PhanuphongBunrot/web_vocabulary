@@ -66,7 +66,7 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    
+
     <title>Document</title>
 </head>
 
@@ -139,17 +139,19 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
     <div class="container">
 
         <div class="   fs-2 shadow p-3 mb-5 bg-body rounded">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-</svg>
-</button>
- <a href="export.php"><img src="image/imgs/excel-img.png" style="width: 60px;;height:auto;" ></a>
- <a href="Report.pdf"><img src="image/imgs/pdf-img.png" style="width: 60px;;height:auto;" ></a>
- <a href="view.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-</svg></a>
- <center> <h2 class="container">Vocabulary</h2></center>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+            <a href="export.php"><img src="image/imgs/excel-img.png" style="width: 60px;;height:auto;"></a>
+            <a href="Report.pdf"><img src="image/imgs/pdf-img.png" style="width: 60px;;height:auto;"></a>
+            <a href="view.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                </svg></a>
+            <center>
+                <h2 class="container">Vocabulary</h2>
+            </center>
             <form name="form1" class="container" action="save.php" method="POST" onSubmit="JavaScript:return fncSubmit();">
                 <div style="width: 700px; " class="container">
                     <label>Vocabulary English </label>
@@ -192,7 +194,7 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
 
             ?>
             <a href="test.php" type="submit" class="btn btn-danger">Random </a>
-            <div id="text" ></div>
+            <div id="text"></div>
             <br>
         </center>
         <form id="form_th" name="form1" class="container" action="javascript:();" enctype="multipart/form-data">
@@ -200,10 +202,10 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
                 <br>
                 <input type="text" name="vla_en" id="vla_en_f" class="form-control ">
                 <input type="text" name="mea_en" id="mea_en_f" class="form-control " value="0" style="display: none;">
-                <input type="text" name="id"  id="id_f" class="form-control " value="<?php echo $id_V[0] ?>" style="display: none;">
+                <input type="text" name="id" id="id_f" class="form-control " value="<?php echo $id_V[0] ?>" style="display: none;">
 
 
-                <button type="submit" class="btn btn-primary" >Send </button>
+                <button type="submit" class="btn btn-primary">Send </button>
 
         </form>
 
@@ -241,10 +243,10 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
                     }
                 }
             }
-           
+
             ?>
             <a href="test.php" type="submit" class="btn btn-danger">Random </a>
-            <div id="text_v" ></div>
+            <div id="text_v"></div>
             <br>
         </center>
         <form id="from_eng" name="from_eng" class="container" action="javascript:();" enctype="multipart/form-data">
@@ -277,52 +279,52 @@ $count_data_do_th_t = mysqli_fetch_array($count_data_do_th_t);
                 <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V9H2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM2 12h12v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2zM.5 10a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z" />
             </svg> write Test </a>
 
-            
+
     </div>
     </div>
-            
+
 
 
     <!-- Button trigger modal -->
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Search </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <center><!--Make sure the form has the autocomplete function switched off:-->
-            <form name="my-form" action="" method="post" enctype="multipart/form-data" >
-                <div class="autocomplete" style="width:300px;">
-                    <input id="myInput" type="text" name="myCountry" class="myCountry">
-                   
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <button  class="btn btn-primary" type="submit" name="submit">   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-</svg></button>
-            </form>
-        <br>
-          <h4 id="data"></h4>
-        </center>
-            
+                <div class="modal-body">
+                    <center><!--Make sure the form has the autocomplete function switched off:-->
+                        <form name="my-form" action="" method="post" enctype="multipart/form-data">
+                            <div class="autocomplete" style="width:300px;">
+                                <input id="myInput" type="text" name="myCountry" class="myCountry">
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        
-      </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit" name="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+                        <br>
+                        <h4 id="data"></h4>
+                    </center>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </body>
 <script src="test.js"></script>
 
 
-<script src="getdata.js" ></script>
-<script src="check.js" ></script>
+<script src="getdata.js"></script>
+<script src="check.js"></script>
 
 </html>

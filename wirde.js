@@ -2,7 +2,7 @@ $(function (){
 
     $('#from_Wirde').on( "submit", function(e) {
         var form = $(this);
-        console.log(form);
+        
          let detail = $('#detail').val()
         
 
@@ -56,11 +56,53 @@ $(function (){
 
 
 
+    $('h3').on( "click", function(e) {
+
+        var id        = $(this).data("id");
+        //  let type =     $(this).data("type");
+
+        //  console.log(id);
+        // var actionUrl = $baseUrl + 'company/announce/pin';
+
+        
+
+
+        // $.ajax({
+        //     url:  actionUrl,
+        //     type: 'POST',
+        //     dataType: 'JSON',
+        //     data: {id: id ,type: type,[csrfName]:csrfHash},
+        //     beforeSend: function () {
+        //         Global.loading();
+        //     },
+        //     success: function(resp){
+   
+        //         // if(resp.result == false){
+        //         //     $('[type="submit"]').prop('disabled', false);
+        //         //     Global.alert('warning', 'Warning:', resp.message);
+        //         //     return false;
+        //         // }
+        //         // Global.toast('success', 'Success:', resp.message);
+        //         // location.reload();
+               
+   
+              
+        //     }
+        // }).fail(function (xhr) {
+        //     $('[type="submit"]').prop('disabled', false);
+        // }).always(function() {
+        //     Global.stopLoading();
+        // });
+        // e.preventDefault();
+
+     
+    });
 
 
 
 
 
+    
 
 
 
