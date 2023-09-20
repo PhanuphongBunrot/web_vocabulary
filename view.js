@@ -24,7 +24,7 @@ $(function (){
             
         },
         success: function(resp){
-            Swal.fire(resp.valu)
+            Swal.fire(resp.valu_V+' = '+resp.valu)
            
             
 
