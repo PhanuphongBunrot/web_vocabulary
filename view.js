@@ -3,7 +3,7 @@ $(function (){
 
 
 
-    $("h3").click(function(){
+    $("h3").dblclick(function(){
         var id        = $(this).data("id");
         console.log(id );
 
